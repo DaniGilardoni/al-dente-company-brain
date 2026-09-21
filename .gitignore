@@ -1,0 +1,35 @@
+# Secrets - never commit these
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node / frontend
+node_modules/
+dist/
+*.tsbuildinfo
+*.log
+
+# Generated artifacts (regenerated at request time)
+backend/static/files/*
+!backend/static/files/.gitkeep
+
+# Submission bundles
+*.zip
+
+# Local tool settings
+.claude/settings.local.json
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
